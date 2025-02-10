@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+:root{
+    --primary-color: #ec4899;
+  }
 body {
     background-image: url('../assets/background.png');
 }
