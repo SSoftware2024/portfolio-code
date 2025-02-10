@@ -39,7 +39,7 @@ onMounted(() => {
 
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .main-container {
   position: absolute;
   display: flex;
@@ -56,13 +56,11 @@ onMounted(() => {
   justify-content: center;
   align-items: center;
   width: 140px;
-}
 
-.image-profile img {
-  width: 100%;
-  border-radius: 100%;
-  border: 5px solid var(--primary-color);
+  img {
+    width: 100%;
+    border-radius: 100%;
+    border: 5px solid var(--primary-color);
+  }
 }
-
-.image-profile h3 {}
 </style>

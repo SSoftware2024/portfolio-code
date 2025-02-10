@@ -11,27 +11,36 @@
         </div>
     </div>
 </template>
-<style scoped>
-.container-menu{
+<style scoped lang="scss">
+.container-menu {
     display: flex;
     border: 2px solid #d8d8d8;
     border-radius: 5px;
     padding: 10px;
     background-color: var(--gray-color);
-    
-}
-.container-menu ul{
-    display: flex;
-    list-style-type: none;
-}
-.container-menu ul li{
-    margin: 0 3px;
-}
-.container-menu ul li a{
-    color: black;
-}
-.container-menu ul li a.active{
-    color: var(--primary-color);
-    font-weight: bold;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+
+        li {
+            margin: 0 3px;
+
+            a {
+                color: black;
+
+                &.active {
+                    color: var(--primary-color);
+                    font-weight: bold;
+                }
+
+                &:hover {
+                    color: black;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
 }
 </style>
