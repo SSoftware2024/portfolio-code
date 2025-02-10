@@ -1,8 +1,10 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import * as images from './js/images.js';
+//COMPONENTS
 import Menu from './components/Menu.vue';
 import MenuMobile from './components/MenuMobile.vue';
+import Card from './components/Card.vue';
 
 const menuViewDesktop = ref(true)
 const isViewDesktop = () => {
@@ -29,6 +31,9 @@ onMounted(() => {
     <Menu v-if="menuViewDesktop"></Menu>
     <MenuMobile v-else></MenuMobile>
     <!-- END MENU -->
+    <!-- CARD CONTENT -->
+    <Card></Card>
+    <!-- END CARD CONTENT -->
 
   </div>
 
@@ -54,6 +59,7 @@ onMounted(() => {
 }
 
 .image-profile img {
+  width: 100%;
   border-radius: 100%;
   border: 5px solid var(--primary-color);
 }

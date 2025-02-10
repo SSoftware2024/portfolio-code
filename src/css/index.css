@@ -1,8 +1,18 @@
-@import "tailwindcss";
-
-:root{
+/* @import "tailwindcss"; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
     --primary-color: #ec4899;
-  }
+    --gray-color: #f3f4f6;
+    --black-color: #374151;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     background-image: url('../assets/background.png');
+    font-family: "Inter", serif;
+}
+a{
+    text-decoration: none;
 }
