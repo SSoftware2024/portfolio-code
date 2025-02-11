@@ -2,10 +2,10 @@
     <div class="container-menu">
         <div>
             <ul>
-                <li><a href="" class="active">SOBRE</a></li>
-                <li><a href="">HABILIADES</a></li>
-                <li><a href="">EXPERIÊNCIA</a></li>
-                <li><a href="">PROJETOS</a></li>
+                <li><a href="" class="active">SOBRE</a> - </li>
+                <li><a href="">HABILIADES</a> - </li>
+                <li><a href="">EXPERIÊNCIA</a> - </li>
+                <li><a href="">PROJETOS</a> - </li>
                 <li><a href="">CONTATO</a></li>
             </ul>
         </div>
@@ -35,8 +35,7 @@
                 }
 
                 &:hover {
-                    color: black;
-                    font-weight: 600;
+                    text-decoration: underline;
                 }
             }
         }
