@@ -19,22 +19,32 @@
 
         <!-- SOCIAL NETWORK  -->
         <div class="social-network">
-            <a href="" class="icon-telegram">
-                <PhTelegramLogo :size="32" />
-            </a>
-            <a href="" class="icon-whatsapp">
-                <PhWhatsappLogo :size="32" />
-            </a>
-            <a href="" class="icon-linkedin">
-                <PhLinkedinLogo :size="32" />
-            </a>
-            <a href="" class="icon-github">
-                <PhGithubLogo :size="32" />
-            </a>
-            <a href="" class="icon-pdf">
-                <PhFilePdf :size="32" />
-            </a>
-            
+            <Tooltip title="TELEGRAM">
+                <a href="" class="icon-telegram">
+                    <PhTelegramLogo :size="32" />
+                </a>
+            </Tooltip>
+            <Tooltip title="WHATSAPP">
+                <a href="" class="icon-whatsapp">
+                    <PhWhatsappLogo :size="32" />
+                </a>
+            </Tooltip>
+            <Tooltip title="LINKEDIN">
+                <a href="" class="icon-linkedin">
+                    <PhLinkedinLogo :size="32" />
+                </a>
+            </Tooltip>
+            <Tooltip title="GITHUB">
+                <a href="" class="icon-github">
+                    <PhGithubLogo :size="32" />
+                </a>
+            </Tooltip>
+            <Tooltip title="PDF">
+                <a href="" class="icon-pdf">
+                    <PhFilePdf :size="32" />
+                </a>
+            </Tooltip>
+
         </div>
         <!-- END SOCIAL NETWORK -->
 
@@ -48,6 +58,7 @@
 
 </template>
 <script setup>
+import { Tooltip } from '@programic/vue3-tooltip';
 import { ref, onMounted } from 'vue';
 import * as images from '../js/images.js';
 import { PhTelegramLogo, PhWhatsappLogo, PhLinkedinLogo, PhFilePdf, PhGithubLogo } from "@phosphor-icons/vue";
@@ -95,16 +106,18 @@ onMounted(() => {
         github: #24292e
     );
 
-    .social-network {
-        a {
-            color: var(--text-color);
-        }
-        @each $theme, $color in $social-network {
-            a.icon-#{$theme}:hover {
-                color: $color;
-            }
+.social-network {
+    margin-top: 10px;
+    a {
+        color: var(--text-color);
+    }
+
+    @each $theme, $color in $social-network {
+        a.icon-#{$theme}:hover {
+            color: $color;
         }
     }
+}
 }
 
 .image-profile {

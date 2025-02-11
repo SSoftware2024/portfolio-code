@@ -23,7 +23,9 @@ onMounted(() => {
 </script>
 <style scoped lang="scss">
 .container-menu {
+    width: 600px;
     display: flex;
+    justify-content: center;
     border: 2px solid #d8d8d8;
     border-radius: 5px;
     padding: 10px;

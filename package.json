@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@phosphor-icons/vue": "^2.2.1",
+    "@programic/vue3-tooltip": "^1.0.0",
     "@tailwindcss/vite": "^4.0.5",
     "tailwindcss": "^4.0.5",
     "typewriter-effect": "^2.21.0",
