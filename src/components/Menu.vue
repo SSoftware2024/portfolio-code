@@ -37,7 +37,7 @@ onMounted(() => {
             margin: 0 3px;
             cursor: pointer;
             a {
-                color: black;
+                color: #4A4A51;
                 cursor: pointer;
 
                 &.active {
