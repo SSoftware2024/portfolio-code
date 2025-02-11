@@ -45,7 +45,7 @@
                         <PhGithubLogo :size="32" />
                     </a>
                 </Tooltip>
-                <Tooltip title="PDF">
+                <Tooltip title="CURRÍCULO">
                     <a :href="images.curriculo" download class="icon-pdf">
                         <PhFilePdf :size="32" />
                     </a>
