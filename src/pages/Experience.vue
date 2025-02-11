@@ -5,7 +5,7 @@ import Card from '../components/Card.vue';
 </script>
 <template>
     <div>
-        <Card title="EXPERIÊNCIAS">
+        <Card title="EXPERIÊNCIAS" class="card-content">
             <p style="margin-bottom: 10px;">
                 <h4>Nível: <span class="primary-color">Pleno</span>;</h4>
                 <h4>Experiência: <span class="primary-color">3 anos</span> </h4>

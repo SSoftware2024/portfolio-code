@@ -1,6 +1,5 @@
 <template>
-    <div class="container-menu">
-        <div>
+        <Card class="container-menu">
             <ul>
                 <li><a @click="router.push({name:'about'})" :class="{'active':route.name == 'about'}">SOBRE</a> - </li>
                 <li><a @click="router.push({name:'skills'})" :class="{'active':route.name == 'skills'}">HABILIADES</a> - </li>
@@ -8,10 +7,12 @@
                 <li><a @click="router.push({name:'projects'})" :class="{'active':route.name == 'projects'}">PROJETOS</a> - </li>
                 <li><a @click="router.push({name:'contatc'})" :class="{'active':route.name == 'contatc'}">CONTATO</a></li>
             </ul>
-        </div>
-    </div>
+        </Card>
 </template>
 <script setup>
+//COMPONENTS
+import Card from '../components/Card.vue';
+//js
 import { onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 const route = useRoute();
@@ -23,13 +24,9 @@ onMounted(() => {
 </script>
 <style scoped lang="scss">
 .container-menu {
-    width: 100%;
     display: flex;
     justify-content: center;
-    border: 2px solid #d8d8d8;
-    border-radius: 5px;
     padding: 10px;
-    background-color: var(--gray-color);
 
     ul {
         display: flex;
