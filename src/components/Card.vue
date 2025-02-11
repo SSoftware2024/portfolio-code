@@ -14,7 +14,7 @@ defineProps({
 </script>
 <style scoped>
 .container-card{
-    width: 600px;
+    width: 100%;
     background-color: var(--gray-color);
     /* background-color: rgb(66, 233, 214); */
     padding: 5px 10px 10px 10px;

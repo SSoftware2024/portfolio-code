@@ -18,6 +18,17 @@ body {
 a{
     text-decoration: none;
 }
+div{
+    box-sizing: border-box;
+}
+div.container-responsive{
+    position: relative;
+    // background-color: red;
+    width: 600px;
+}
+.primary-color{
+    color: var(--primary-color);
+}
 .dark{
     body{
         background-image: url('../assets/background-dark.png');

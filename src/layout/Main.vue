@@ -1,59 +1,65 @@
 <template>
 
     <div class="main-container">
-        <!-- PROFILE -->
-        <div class="image-profile">
-            <img :src="images.profile" alt="">
-        </div>
-        <div style="margin-top: 10px;">
-            <h3 id="typewriter">Tiago Alves</h3>
-        </div>
-        <!-- END PROFILE -->
-        <!-- MENU -->
-        <div style="margin-top: 10px;">
-            <Menu v-if="menuViewDesktop"></Menu>
-            <MenuMobile v-else></MenuMobile>
-        </div>
 
-        <!-- END MENU -->
+        <div class="container-responsive">
+            <!-- PROFILE -->
+            <div class="image-profile">
+                <img :src="images.profile" alt="">
+            </div>
+            <div class="theme-toggle">
+                <!-- <PhSun :size="32" class="icon-button sun"/> -->
+                <PhMoon :size="32" class="icon-button moon" weight="fill" />
+            </div>
+            <div style="margin-top: 10px;">
+                <h3 id="typewriter" style="text-align: center;">Tiago Alves</h3>
+            </div>
+            <!-- END PROFILE -->
+            <!-- MENU -->
+            <div style="margin-top: 10px;">
+                <Menu v-if="menuViewDesktop"></Menu>
+                <MenuMobile v-else></MenuMobile>
+            </div>
 
-        <!-- SOCIAL NETWORK  -->
-        <div class="social-network">
-            <Tooltip title="TELEGRAM">
-                <a href="" class="icon-telegram">
-                    <PhTelegramLogo :size="32" />
-                </a>
-            </Tooltip>
-            <Tooltip title="WHATSAPP">
-                <a href="" class="icon-whatsapp">
-                    <PhWhatsappLogo :size="32" />
-                </a>
-            </Tooltip>
-            <Tooltip title="LINKEDIN">
-                <a href="" class="icon-linkedin">
-                    <PhLinkedinLogo :size="32" />
-                </a>
-            </Tooltip>
-            <Tooltip title="GITHUB">
-                <a href="" class="icon-github">
-                    <PhGithubLogo :size="32" />
-                </a>
-            </Tooltip>
-            <Tooltip title="PDF">
-                <a href="" class="icon-pdf">
-                    <PhFilePdf :size="32" />
-                </a>
-            </Tooltip>
+            <!-- END MENU -->
 
+            <!-- SOCIAL NETWORK  -->
+            <div class="social-network">
+                <Tooltip title="TELEGRAM">
+                    <a href="https://t.me/TiagoDevelop" target="_blank" class="icon-telegram">
+                        <PhTelegramLogo :size="32" />
+                    </a>
+                </Tooltip>
+                <Tooltip title="WHATSAPP">
+                    <a href="https://wa.link/1yl95p" target="_blank" class="icon-whatsapp">
+                        <PhWhatsappLogo :size="32" />
+                    </a>
+                </Tooltip>
+                <Tooltip title="LINKEDIN">
+                    <a href="https://www.linkedin.com/in/tiago-alves-dos-santos-de-oliveira-96699a189/" target="_blank" class="icon-linkedin">
+                        <PhLinkedinLogo :size="32" />
+                    </a>
+                </Tooltip>
+                <Tooltip title="GITHUB">
+                    <a href="https://github.com/SSoftware2024" target="_blank" class="icon-github">
+                        <PhGithubLogo :size="32" />
+                    </a>
+                </Tooltip>
+                <Tooltip title="PDF">
+                    <a :href="images.curriculo" download class="icon-pdf">
+                        <PhFilePdf :size="32" />
+                    </a>
+                </Tooltip>
+
+            </div>
+            <!-- END SOCIAL NETWORK -->
+
+            <!-- CARD CONTENT -->
+            <div style="margin-top: 10px;">
+                <router-view></router-view>
+            </div>
+            <!-- END CARD CONTENT -->
         </div>
-        <!-- END SOCIAL NETWORK -->
-
-        <!-- CARD CONTENT -->
-        <div style="margin-top: 10px;">
-            <router-view></router-view>
-        </div>
-        <!-- END CARD CONTENT -->
-
     </div>
 
 </template>
@@ -61,7 +67,7 @@
 import { Tooltip } from '@programic/vue3-tooltip';
 import { ref, onMounted } from 'vue';
 import * as images from '../js/images.js';
-import { PhTelegramLogo, PhWhatsappLogo, PhLinkedinLogo, PhFilePdf, PhGithubLogo } from "@phosphor-icons/vue";
+import { PhTelegramLogo, PhWhatsappLogo, PhLinkedinLogo, PhFilePdf, PhGithubLogo, PhSun, PhMoon } from "@phosphor-icons/vue";
 //COMPONENTS
 import Menu from '../components/Menu.vue';
 import MenuMobile from '../components/MenuMobile.vue';
@@ -108,6 +114,9 @@ onMounted(() => {
 
 .social-network {
     margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     a {
         color: var(--text-color);
     }
@@ -121,16 +130,35 @@ onMounted(() => {
 }
 
 .image-profile {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 140px;
+    width: 100%;
 
     img {
-        width: 100%;
+        width: 140px;
         border-radius: 100%;
         border: 5px solid var(--primary-color);
+    }
+}
+
+div.theme-toggle {
+    position: absolute;
+    top: 0;
+    right: 0px;
+
+    .icon-button {
+        cursor: pointer;
+
+        &.moon {
+            color: #3b82f6;
+        }
+
+        &.sun {
+            color: #eab308;
+        }
     }
 }
 </style>
