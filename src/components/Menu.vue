@@ -2,15 +2,25 @@
     <div class="container-menu">
         <div>
             <ul>
-                <li><a href="" class="active">SOBRE</a> - </li>
-                <li><a href="">HABILIADES</a> - </li>
-                <li><a href="">EXPERIÊNCIA</a> - </li>
-                <li><a href="">PROJETOS</a> - </li>
-                <li><a href="">CONTATO</a></li>
+                <li><a @click="router.push({name:'about'})" :class="{'active':route.name == 'about'}">SOBRE</a> - </li>
+                <li><a @click="router.push({name:'skills'})" :class="{'active':route.name == 'skills'}">HABILIADES</a> - </li>
+                <li><a @click="router.push({name:'experiences'})" :class="{'active':route.name == 'experiences'}">EXPERIÊNCIA</a> - </li>
+                <li><a @click="router.push({name:'projects'})" :class="{'active':route.name == 'projects'}">PROJETOS</a> - </li>
+                <li><a @click="router.push({name:'contatc'})" :class="{'active':route.name == 'contatc'}">CONTATO</a></li>
             </ul>
         </div>
     </div>
 </template>
+<script setup>
+import { onMounted } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
+const route = useRoute();
+const router = useRouter();
+
+onMounted(() => {
+
+})
+</script>
 <style scoped lang="scss">
 .container-menu {
     display: flex;
@@ -25,9 +35,10 @@
 
         li {
             margin: 0 3px;
-
+            cursor: pointer;
             a {
                 color: black;
+                cursor: pointer;
 
                 &.active {
                     color: var(--primary-color);

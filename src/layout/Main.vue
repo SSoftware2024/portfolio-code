@@ -32,7 +32,7 @@ onMounted(() => {
     <!-- END MENU -->
     <!-- CARD CONTENT -->
     <div style="margin-top: 10px;">
-      <slot></slot>
+      <router-view></router-view>
     </div>
     <!-- END CARD CONTENT -->
 
