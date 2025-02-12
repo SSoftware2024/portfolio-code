@@ -1,11 +1,11 @@
 <template>
     <Teleport to="body">
-        <div class="content-modal">
+        <div class="content-modal" v-if="show">
             <div class="modal">
                 <div class="close-button">
-                    <PhXCircle :size="30" class="text" id="close-button"/>
+                    <PhXCircle :size="30" class="text" id="close-button" @click="close"/>
                 </div>
-                <h3 style="text-align: center;">SOBRE</h3>
+                <h3 style="text-align: center;">{{ title }}</h3>
                 <div>
                     <slot></slot>
                 </div>
@@ -14,7 +14,18 @@
     </Teleport>
 </template>
 <script setup>
-import { PhXCircle } from "@phosphor-icons/vue"
+import { PhXCircle } from "@phosphor-icons/vue";
+defineProps({
+   show:{
+    type: Boolean,
+    default: false
+   },
+   title:'',
+   close: {
+    type: Function,
+    required: true,
+   }
+});
 </script>
 <style scoped lang="scss">
 div.content-modal {

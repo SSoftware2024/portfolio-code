@@ -1,5 +1,5 @@
 <template>
-    <Modal>
+    <Modal :show="showModal" :close="() => showModal = false" title="HABILIDADES">
         <div class="row-habilitis">
             <div class="three-habilits">
                 <div>
@@ -124,29 +124,29 @@
                             <li>GITFLOW</li>
                             <li>GITHUB ACTIONS</li>
                             <li>JSON / XML</li>
-                            <li>TESTES UNITÁRIOS </li>
-                            <!-- teste uniatrios back end -->
                         </ul>
                     </div>
                 </div>
             </div>
             <div style="display: flex; justify-content: center; margin-top: 10px;">
-                <Button @click="readMore('your function here')" class="primary">
+                <Button @click="() => showModal = true" class="primary">
                     LER MAIS
-                    <!-- criar modal com mais  habilidades: API rest full,teste, agluns pacotes laravel novos e antigos etc -->
                 </Button>
             </div>
         </Card>
     </div>
 </template>
 <script setup>
+import {ref} from 'vue';
 //COMPONENTS
 import Card from '../components/Card.vue';
 import Button from '../components/Button.vue';
 import Modal from '../components/Modal.vue';
 
-function readMore(message) {
-    console.log(message);
+const showModal = ref(false);
+
+function readMore() {
+    
 }
 
 </script>
