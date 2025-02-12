@@ -6,4 +6,7 @@ import Tooltip from "@programic/vue3-tooltip";
 // Import the CSS or use your own!
 import '@programic/vue3-tooltip/dist/index.css';
 
-createApp(App).use(router).use(Tooltip, {placement: 'bottom'}).mount('#app')
+createApp(App)
+    .use(router)
+    .use(Tooltip, { placement: 'bottom' })
+    .mount('#app')

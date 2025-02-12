@@ -13,14 +13,10 @@
 //COMPONENTS
 import Card from '../components/Card.vue';
 //js
-import { onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 const route = useRoute();
 const router = useRouter();
 
-onMounted(() => {
-
-})
 </script>
 <style scoped lang="scss">
 .container-menu {

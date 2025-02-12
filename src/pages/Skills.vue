@@ -1,4 +1,6 @@
 <template>
+    <Modal>
+    </Modal>
     <div>
         <Card title="HABILIDADES" class="card-content">
             <div class="row-habilitis">
@@ -67,6 +69,7 @@
 //COMPONENTS
 import Card from '../components/Card.vue';
 import Button from '../components/Button.vue';
+import Modal from '../components/Modal.vue';
 
 function readMore(message) {
     console.log(message);

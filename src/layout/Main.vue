@@ -1,5 +1,4 @@
 <template>
-
     <div class="main-container">
 
         <div class="container-responsive">
