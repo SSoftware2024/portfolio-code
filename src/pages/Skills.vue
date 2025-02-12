@@ -1,5 +1,5 @@
 <template>
-    <Modal :show="showModal" :close="() => showModal = false" title="HABILIDADES">
+    <Modal :show="showModal" :close="() => showModal = false" title="HABILIDADES++">
         <div class="row-habilitis">
             <div class="three-habilits">
                 <div>
@@ -12,16 +12,19 @@
                 <div>
                     <h4>LARAVEL</h4>
                     <ul>
+                        <li>INERTIA</li>
+                        <li>LIVEWIRE</li>
                         <li>BREEZE</li>
                         <li>JETSTREAM</li>
                         <li>FORTIFY</li>
                         <li>SANCTUM</li>
                         <li>PASSPORT</li>
-                        <li>WEBSOCKETS/REVERB</li>
-                        <li>QUEQUE/HORIZON</li>
-                        <li>LARAVEL UI <i>(Legado)</i> </li>
-                        <li>LARAVEL DOCKER </li>
-                        <li style="font-weight: bold;"> <i>ETC...</i> </li>
+                        <li>WEBSOCKETS</li>
+                        <li>QUEQUE</li>
+                        <li>HORIZON</li>
+                        <li>LARAVEL UI - <i style="text-decoration: underline;">Legado</i> </li>
+                        <li>LARADOCK </li>
+                        <li style="font-weight: bold; color:#00BCFF;"> <i>ETC...</i> </li>
                     </ul>
                 </div>
                 <div>
@@ -30,7 +33,7 @@
                         <li>BOOTSTRAP</li>
                         <li>TAILWIND</li>
                         <li>FOUNDATION</li>
-                        <li style="font-weight: bold;"> <i>ETC...</i> </li>
+                        <li style="font-weight: bold;color:#00BCFF;"> <i>ETC...</i> </li>
                     </ul>
                 </div>
             </div>
@@ -42,7 +45,7 @@
                         <li>PRIMEVUE</li>
                         <li>NUXT</li>
                         <li>QUASAR</li>
-                        <li style="font-weight: bold;"> <i>ETC...</i> </li>
+                        <li style="font-weight: bold;color:#00BCFF;"> <i>ETC...</i> </li>
                     </ul>
                 </div>
                 <div>
@@ -52,7 +55,7 @@
                         <li>NEXT.JS</li>
                         <li>SEMANTIC UI</li>
                         <li>CHACKRA UI</li>
-                        <li style="font-weight: bold;"> <i>ETC...</i> </li>
+                        <li style="font-weight: bold;color:#00BCFF;"> <i>ETC...</i> </li>
                     </ul>
                 </div>
                 <div>
@@ -69,7 +72,7 @@
                     <h4>OUTROS</h4>
                     <ul>
                         <li>BITBUCKET</li>
-                        <li>CI / CD <i> (Aprofundando) </i> </li>
+                        <li>CI / CD - <i style="text-decoration: underline;">Aprofundando</i></li>
                     </ul>
                 </div>
             </div>
@@ -82,8 +85,8 @@
                     <div>
                         <h4>BACK-END</h4>
                         <ul>
-                            <li>PHP</li>
-                            <li>C# (sharp)</li>
+                            <li>PHP / LARAVEL</li>
+                            <li>C#(sharp)</li>
                         </ul>
                     </div>
                     <div>
@@ -92,6 +95,7 @@
                             <li>VUE</li>
                             <li>REACT</li>
                             <li>VITE</li>
+                            <li>JQUERY</li>
                         </ul>
                     </div>
                     <div>
@@ -107,13 +111,13 @@
                         <h4>MÓVEL</h4>
                         <ul>
                             <li>REACT NATIVE </li>
-                            <li>FLUTTER <i>(Aprofundando)</i></li>
+                            <li>FLUTTER - <i style="text-decoration: underline;">Aprofundando</i></li>
                         </ul>
                     </div>
                     <div>
                         <h4>DEVOPS</h4>
                         <ul>
-                            <li>DOCKER <i>(Aprofundando)</i></li>
+                            <li>DOCKER - <i style="text-decoration: underline;">Aprofundando</i></li>
                             <li>HOSPEDAGEM</li>
                             <li>VPS</li>
                         </ul>
