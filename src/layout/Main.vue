@@ -5,7 +5,7 @@
         <div class="container-responsive">
             <!-- PROFILE -->
             <div class="image-profile">
-                <img :src="images.profile" alt="">
+                <img :src="files.profile" alt="">
             </div>
             <div class="theme-toggle">
                 <!-- <PhSun :size="32" class="icon-button sun"/> -->
@@ -46,7 +46,7 @@
                     </a>
                 </Tooltip>
                 <Tooltip title="CURRÍCULO">
-                    <a :href="images.curriculo" download class="icon-pdf">
+                    <a :href="files.curriculo" download class="icon-pdf">
                         <PhFilePdf :size="32" />
                     </a>
                 </Tooltip>
@@ -66,7 +66,7 @@
 <script setup>
 import { Tooltip } from '@programic/vue3-tooltip';
 import { ref, onMounted } from 'vue';
-import * as images from '../js/images.js';
+import * as files from '../js/files.js';
 import { PhTelegramLogo, PhWhatsappLogo, PhLinkedinLogo, PhFilePdf, PhGithubLogo, PhSun, PhMoon } from "@phosphor-icons/vue";
 //COMPONENTS
 import Menu from '../components/Menu.vue';
