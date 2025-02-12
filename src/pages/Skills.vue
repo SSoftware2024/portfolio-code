@@ -112,6 +112,7 @@
                         <ul>
                             <li>REACT NATIVE </li>
                             <li>FLUTTER - <i style="text-decoration: underline;">Aprofundando</i></li>
+                            <li>MOBX - <i>Pacote</i></li>
                         </ul>
                     </div>
                     <div>
