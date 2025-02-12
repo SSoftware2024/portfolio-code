@@ -6,10 +6,10 @@ import Card from '../components/Card.vue';
 <template>
     <div>
         <Card title="EXPERIÊNCIAS" class="card-content">
-            <p style="margin-bottom: 10px;">
+            <div style="margin-bottom: 10px;">
                 <h4>Nível: <span class="primary-color">Pleno</span>;</h4>
                 <h4>Experiência: <span class="primary-color">3 anos</span> </h4>
-            </p>
+            </div>
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
