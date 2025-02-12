@@ -7,7 +7,7 @@
                 </div>
                 <h3 style="text-align: center;">SOBRE</h3>
                 <div>
-                
+                    <slot></slot>
                 </div>
             </div>
         </div>
@@ -32,7 +32,6 @@ div.content-modal {
     .modal {
         position: relative;
         width: 500px;
-        height: 500px;
         background-color: white;
         border-radius: 5px;
         padding: 10px;

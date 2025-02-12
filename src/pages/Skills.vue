@@ -1,5 +1,79 @@
 <template>
     <Modal>
+        <div class="row-habilitis">
+            <div class="three-habilits">
+                <div>
+                    <h4>BACK-END</h4>
+                    <ul>
+                        <li>TESTES UNITÁRIOS</li>
+                        <li>API RESTFULL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>LARAVEL</h4>
+                    <ul>
+                        <li>BREEZE</li>
+                        <li>JETSTREAM</li>
+                        <li>FORTIFY</li>
+                        <li>SANCTUM</li>
+                        <li>PASSPORT</li>
+                        <li>WEBSOCKETS/REVERB</li>
+                        <li>QUEQUE/HORIZON</li>
+                        <li>LARAVEL UI <i>(Legado)</i> </li>
+                        <li>LARAVEL DOCKER </li>
+                        <li style="font-weight: bold;"> <i>ETC...</i> </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>FRAMEWORK CSS</h4>
+                    <ul>
+                        <li>BOOTSTRAP</li>
+                        <li>TAILWIND</li>
+                        <li>FOUNDATION</li>
+                        <li style="font-weight: bold;"> <i>ETC...</i> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="three-habilits" style="position: relative;">
+                <div>
+                    <h4>VUE</h4>
+                    <ul>
+                        <li>VUETIFY</li>
+                        <li>PRIMEVUE</li>
+                        <li>NUXT</li>
+                        <li>QUASAR</li>
+                        <li style="font-weight: bold;"> <i>ETC...</i> </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>REACT</h4>
+                    <ul>
+                        <li>MARTERIAL UI</li>
+                        <li>NEXT.JS</li>
+                        <li>SEMANTIC UI</li>
+                        <li>CHACKRA UI</li>
+                        <li style="font-weight: bold;"> <i>ETC...</i> </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>BANCO</h4>
+                    <ul>
+                        <li>MYSQL</li>
+                        <li>POSTGRES SQL</li>
+                        <li>SQL SERVER</li>
+                        <li>SQLITE</li>
+                        <li>MONGO DB</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>OUTROS</h4>
+                    <ul>
+                        <li>BITBUCKET</li>
+                        <li>CI / CD <i> (Aprofundando) </i> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </Modal>
     <div>
         <Card title="HABILIDADES" class="card-content">
@@ -82,6 +156,7 @@ div.row-habilitis {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 10px;
+
     // margin-left: 40px;
     div.three-habilits {
         display: flex;
@@ -89,11 +164,13 @@ div.row-habilitis {
 
         ul {
             list-style-type: none;
-            li{
+
+            li {
                 font-size: 15px;
             }
         }
-        div{
+
+        div {
             margin-top: 10px;
         }
     }
