@@ -4,8 +4,7 @@
                 <li><a @click="router.push({name:'about'})" :class="{'active':route.name == 'about'}">SOBRE</a> - </li>
                 <li><a @click="router.push({name:'skills'})" :class="{'active':route.name == 'skills'}">HABILIADES</a> - </li>
                 <li><a @click="router.push({name:'experiences'})" :class="{'active':route.name == 'experiences'}">EXPERIÊNCIA</a> - </li>
-                <li><a @click="router.push({name:'projects'})" :class="{'active':route.name == 'projects'}">PROJETOS</a> - </li>
-                <li><a @click="router.push({name:'contatc'})" :class="{'active':route.name == 'contatc'}">CONTATO</a></li>
+                <li><a @click="router.push({name:'projects'})" :class="{'active':route.name == 'projects'}">PROJETOS</a></li>
             </ul>
         </Card>
 </template>

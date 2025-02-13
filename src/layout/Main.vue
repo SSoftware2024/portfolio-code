@@ -44,6 +44,11 @@
                         <PhGithubLogo :size="32" />
                     </a>
                 </Tooltip>
+                <Tooltip title="ENVIAR EMAIL">
+                    <a href="mailto:tiagooliveiraasodev@gmail.com?subject=Iteresse%20em%20seu%20trabalho&body=Olá, me chamo..." target="_blank" class="icon-email">
+                        <PhEnvelopeSimple :size="32" />
+                    </a>
+                </Tooltip>
                 <Tooltip title="CURRÍCULO">
                     <a :href="files.curriculo" download class="icon-pdf">
                         <PhFilePdf :size="32" />
@@ -54,7 +59,7 @@
             <!-- END SOCIAL NETWORK -->
 
             <!-- CARD CONTENT -->
-            <div style="margin-top: 10px;">
+            <div style="position: relative;;margin: 10px 0; height: auto; overflow: hidden;">
                 <router-view></router-view>
             </div>
             <!-- END CARD CONTENT -->
@@ -66,7 +71,7 @@
 import { Tooltip } from '@programic/vue3-tooltip';
 import { ref, onMounted } from 'vue';
 import * as files from '../js/files.js';
-import { PhTelegramLogo, PhWhatsappLogo, PhLinkedinLogo, PhFilePdf, PhGithubLogo, PhSun, PhMoon } from "@phosphor-icons/vue";
+import { PhTelegramLogo, PhWhatsappLogo, PhLinkedinLogo, PhFilePdf, PhGithubLogo, PhSun, PhMoon,PhEnvelopeSimple } from "@phosphor-icons/vue";
 //COMPONENTS
 import Menu from '../components/Menu.vue';
 import MenuMobile from '../components/MenuMobile.vue';
@@ -108,7 +113,8 @@ onMounted(() => {
         whatsapp: #0fcc08,
         pdf: #f51313,
         linkedin: #0077b5,
-        github: #24292e
+        github: #24292e,
+        email: #dede06
     );
 
 .social-network {

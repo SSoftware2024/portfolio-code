@@ -21,7 +21,7 @@
                         <li>Criação de sistema desde a modelagem, telas, versionamento a lançamento de versão estável
                         </li>
                         <li>
-                            <i style="font-weight: 600;">Continuação...</i>
+                            <i style="font-weight: 600;">Em progresso...</i>
                         </li>
                     </ul>
                 </div>

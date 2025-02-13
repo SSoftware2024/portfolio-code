@@ -7,7 +7,6 @@ import About from './pages/About.vue';
 import Skills from './pages/Skills.vue';
 import Experience from './pages/Experience.vue';
 import Projects from './pages/Projects.vue';  
-import Contatc from './pages/Contatc.vue';  
 
 const routes = [
     {
@@ -33,12 +32,7 @@ const routes = [
                 path: '/projects',
                 name: 'projects',
                 component: Projects
-            },
-            {
-                path: '/contatc',
-                name: 'contatc',
-                component: Contatc
-            },
+            }
 
         ],
     },
