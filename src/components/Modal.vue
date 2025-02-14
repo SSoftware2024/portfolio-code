@@ -31,15 +31,14 @@ const props = defineProps({
 function backdropFullPage() {
     let backdrops = document.getElementsByClassName('content-modal');
     for (var i = 0; i < backdrops.length; i++) {
-        backdrops[i].style.height = document.documentElement.scrollHeight+ 'px';
+        backdrops[i].style.height = document.documentElement.scrollHeight + 'px';
     }
 }
 watch(() => props.show, async () => {
-    if(props.show){
+    if (props.show) {
         await nextTick();
         backdropFullPage();
     }
-    console.log('mudou')
 });
 onMounted(() => {
     backdropFullPage();
@@ -64,6 +63,13 @@ div.content-modal {
         background-color: white;
         border-radius: 5px;
         padding: 10px;
+
+        @media (max-width: 510px) {
+            width: 400px;
+        }
+        @media (max-width: 410px) {
+            width: 300px;
+        }
 
         .close-button {
             width: 100%;
