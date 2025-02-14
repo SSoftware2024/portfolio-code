@@ -3,7 +3,7 @@
         <div class="content-modal" v-if="show">
             <div class="modal">
                 <div class="close-button">
-                    <PhXCircle :size="30" class="text" id="close-button" @click="close"/>
+                    <PhXCircle :size="30" class="text" id="close-button" @click="close" />
                 </div>
                 <h3 style="text-align: center;">{{ title }}</h3>
                 <div>
@@ -14,18 +14,36 @@
     </Teleport>
 </template>
 <script setup>
+import { onMounted, watch, nextTick } from "vue";
 import { PhXCircle } from "@phosphor-icons/vue";
-defineProps({
-   show:{
-    type: Boolean,
-    default: false
-   },
-   title:'',
-   close: {
-    type: Function,
-    required: true,
-   }
+const props = defineProps({
+    show: {
+        type: Boolean,
+        default: false
+    },
+    title: '',
+    close: {
+        type: Function,
+        required: true,
+    }
 });
+
+function backdropFullPage() {
+    let backdrops = document.getElementsByClassName('content-modal');
+    for (var i = 0; i < backdrops.length; i++) {
+        backdrops[i].style.height = document.documentElement.scrollHeight+ 'px';
+    }
+}
+watch(() => props.show, async () => {
+    if(props.show){
+        await nextTick();
+        backdropFullPage();
+    }
+    console.log('mudou')
+});
+onMounted(() => {
+    backdropFullPage();
+})
 </script>
 <style scoped lang="scss">
 div.content-modal {
@@ -51,10 +69,12 @@ div.content-modal {
             width: 100%;
             display: flex;
             justify-content: flex-end;
+
             .text {
                 cursor: pointer;
                 color: black;
-                &:hover{
+
+                &:hover {
                     color: rgb(199, 0, 54);
                 }
             }
@@ -62,8 +82,9 @@ div.content-modal {
     }
 
 }
-.dark{
-    div.modal{
+
+.dark {
+    div.modal {
         background-color: var(--gray-color-dark);
         color: var(--text-color-dark);
     }
