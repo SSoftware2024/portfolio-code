@@ -12,7 +12,7 @@ defineProps({
     title:'',
 });
 </script>
-<style scoped>
+<style scoped lang="scss">
 .container-card{
     width: 100%;
     background-color: var(--gray-color);
@@ -24,5 +24,12 @@ defineProps({
     p{
         text-align: justify;
     }
+}
+.dark{
+    .container-card{
+        background-color: var(--gray-color-dark);
+        border: 2px solid #222d3c;
+    }
+    
 }
 </style>

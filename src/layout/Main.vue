@@ -201,4 +201,14 @@ div.theme-toggle {
         }
     }
 }
+.dark{
+    .social-network{
+        a{
+            color: var(--text-color-dark);
+        }
+        a.icon-github:hover{
+            color: white;
+        }
+    }
+}
 </style>

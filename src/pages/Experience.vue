@@ -95,4 +95,9 @@ div.company {
         }
     }
 }
+.dark{
+    h5.info-time {
+        color: var(--text-second-color-dark);
+    }
+}
 </style>

@@ -52,8 +52,7 @@
                         </div>
                     </div>
                     <div class="links">
-                        <Button class="black"
-                            @click="openLink('https://github.com/SSoftware2024/todoList')">
+                        <Button class="black" @click="openLink('https://github.com/SSoftware2024/todoList')">
                             GITHUB
                         </Button>
                         <Button class="red" @click="openLink('https://www.youtube.com/watch?v=J6kNsvGzdFI')">
@@ -81,8 +80,7 @@
                         </div>
                     </div>
                     <div class="links">
-                        <Button class="black"
-                            @click="openLink('https://github.com/SSoftware2024/portfolio-code')">
+                        <Button class="black" @click="openLink('https://github.com/SSoftware2024/portfolio-code')">
                             GITHUB
                         </Button>
                     </div>
@@ -157,6 +155,14 @@ div.row-project {
             button {
                 margin: 0 3px;
             }
+        }
+    }
+}
+
+.dark {
+    .row-project {
+        .container-project {
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
         }
     }
 }

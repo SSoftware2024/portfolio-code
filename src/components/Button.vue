@@ -55,4 +55,10 @@ button{
         }
     }
 }
+.dark{
+    button.black{
+        background-color: white;
+        color: black;
+    }
+}
 </style>

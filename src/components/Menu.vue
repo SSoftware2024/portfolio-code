@@ -1,12 +1,18 @@
 <template>
-        <Card class="container-menu">
-            <ul>
-                <li><a @click="router.push({name:'about'})" :class="{'active':route.name == 'about'}">SOBRE</a> - </li>
-                <li><a @click="router.push({name:'skills'})" :class="{'active':route.name == 'skills'}">HABILIADES</a> - </li>
-                <li><a @click="router.push({name:'experiences'})" :class="{'active':route.name == 'experiences'}">EXPERIÊNCIA</a> - </li>
-                <li><a @click="router.push({name:'projects'})" :class="{'active':route.name == 'projects'}">PROJETOS</a></li>
-            </ul>
-        </Card>
+    <Card class="container-menu">
+        <ul>
+            <li><a @click="router.push({ name: 'about' })" :class="{ 'active': route.name == 'about' }">SOBRE</a> -
+            </li>
+            <li><a @click="router.push({ name: 'skills' })" :class="{ 'active': route.name == 'skills' }">HABILIADES</a>
+                -
+            </li>
+            <li><a @click="router.push({ name: 'experiences' })"
+                    :class="{ 'active': route.name == 'experiences' }">EXPERIÊNCIA</a> - </li>
+            <li><a @click="router.push({ name: 'projects' })"
+                    :class="{ 'active': route.name == 'projects' }">PROJETOS</a>
+            </li>
+        </ul>
+    </Card>
 </template>
 <script setup>
 //COMPONENTS
@@ -30,8 +36,9 @@ const router = useRouter();
         li {
             margin: 0 3px;
             cursor: pointer;
+
             a {
-                color: #4A4A51;
+                color: var(--text-color);
                 cursor: pointer;
 
                 &.active {
@@ -46,5 +53,15 @@ const router = useRouter();
         }
     }
 
+}
+
+.dark {
+    .container-menu {
+
+        a {
+            color: var(--text-color-dark);
+        }
+
+    }
 }
 </style>

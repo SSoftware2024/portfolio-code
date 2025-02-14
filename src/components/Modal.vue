@@ -62,4 +62,10 @@ div.content-modal {
     }
 
 }
+.dark{
+    div.modal{
+        background-color: var(--gray-color-dark);
+        color: var(--text-color-dark);
+    }
+}
 </style>

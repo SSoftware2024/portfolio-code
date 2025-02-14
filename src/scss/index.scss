@@ -9,6 +9,11 @@
     --text-second-color: #6b7280;
     --green-color: #a6c540;
     --red-color: rgb(230, 125, 116);
+
+    //dark
+    --text-color-dark: #94A3B8;
+    --gray-color-dark: #334155;
+    --text-second-color-dark:#95a3bb;
 }
 
 * {
@@ -46,6 +51,10 @@ div.container-responsive {
 .dark {
     body {
         background-image: url('../assets/background-dark.png');
+        color: var(--text-color-dark);
+    }
+    ::-webkit-scrollbar-track {
+        background-color: black;
     }
 }
 
