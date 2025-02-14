@@ -105,7 +105,7 @@ onMounted(() => {
     })
 
     function loadTheme() {
-        // localStorage.clear();
+        localStorage.clear();
         let theme = localStorage.getItem('theme');
         if (theme) {
             switch (theme) {
@@ -118,6 +118,8 @@ onMounted(() => {
                     break;
             }
             localStorage.setItem('theme', theme);
+        }else{
+            window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');
         }
     }
 

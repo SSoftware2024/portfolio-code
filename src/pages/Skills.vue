@@ -180,7 +180,4 @@ div.row-habilitis {
         }
     }
 }
-.dark{
-    
-}
 </style>
