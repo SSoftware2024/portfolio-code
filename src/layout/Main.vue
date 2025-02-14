@@ -7,8 +7,8 @@
                 <img :src="files.profile" alt="">
             </div>
             <div class="theme-toggle">
-                <!-- <PhSun :size="32" class="icon-button sun"/> -->
-                <PhMoon :size="32" class="icon-button moon" weight="fill" />
+                <PhSun :size="32" class="icon-button sun" @click="setTheme('light');" v-if="isDarkTheme" />
+                <PhMoon :size="32" class="icon-button moon" weight="fill" @click="setTheme('dark');" v-else />
             </div>
             <div style="margin-top: 10px;">
                 <h3 id="typewriter" style="text-align: center;">Tiago Alves</h3>
@@ -35,7 +35,8 @@
                     </a>
                 </Tooltip>
                 <Tooltip title="LINKEDIN">
-                    <a href="https://www.linkedin.com/in/tiago-alves-dos-santos-de-oliveira-96699a189/" target="_blank" class="icon-linkedin">
+                    <a href="https://www.linkedin.com/in/tiago-alves-dos-santos-de-oliveira-96699a189/" target="_blank"
+                        class="icon-linkedin">
                         <PhLinkedinLogo :size="32" />
                     </a>
                 </Tooltip>
@@ -45,7 +46,8 @@
                     </a>
                 </Tooltip>
                 <Tooltip title="ENVIAR EMAIL">
-                    <a href="mailto:tiagooliveiraasodev@gmail.com?subject=Iteresse%20em%20seu%20trabalho&body=Olá, me chamo..." target="_blank" class="icon-email">
+                    <a href="mailto:tiagooliveiraasodev@gmail.com?subject=Iteresse%20em%20seu%20trabalho&body=Olá, me chamo..."
+                        target="_blank" class="icon-email">
                         <PhEnvelopeSimple :size="32" />
                     </a>
                 </Tooltip>
@@ -71,7 +73,7 @@
 import { Tooltip } from '@programic/vue3-tooltip';
 import { ref, onMounted } from 'vue';
 import * as files from '../js/files.js';
-import { PhTelegramLogo, PhWhatsappLogo, PhLinkedinLogo, PhFilePdf, PhGithubLogo, PhSun, PhMoon,PhEnvelopeSimple } from "@phosphor-icons/vue";
+import { PhTelegramLogo, PhWhatsappLogo, PhLinkedinLogo, PhFilePdf, PhGithubLogo, PhSun, PhMoon, PhEnvelopeSimple } from "@phosphor-icons/vue";
 //COMPONENTS
 import Menu from '../components/Menu.vue';
 import MenuMobile from '../components/MenuMobile.vue';
@@ -79,14 +81,45 @@ import MenuMobile from '../components/MenuMobile.vue';
 import Typewriter from 'typewriter-effect/dist/core';
 
 const menuViewDesktop = ref(true)
+const isDarkTheme = ref(false);
 const isViewDesktop = () => {
     return window.innerWidth > 600;
 }
+
+function setTheme(theme) {
+    isDarkTheme.value = theme == 'dark';
+    if (isDarkTheme.value) {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+    }
+
+}
+
 onMounted(() => {
     menuViewDesktop.value = isViewDesktop();
     window.addEventListener('resize', function () {
         menuViewDesktop.value = isViewDesktop();
     })
+
+    function loadTheme() {
+        // localStorage.clear();
+        let theme = localStorage.getItem('theme');
+        if (theme) {
+            switch (theme) {
+                case 'dark':
+                    setTheme(theme);
+                    break;
+                case 'light':
+                default:
+                    setTheme(theme);
+                    break;
+            }
+            localStorage.setItem('theme', theme);
+        }
+    }
 
     function typewriter(params) {
         new Typewriter('#typewriter', {
@@ -96,6 +129,7 @@ onMounted(() => {
             loop: true,
         });
     }
+    loadTheme();
     typewriter();
 })
 </script>
@@ -122,6 +156,7 @@ onMounted(() => {
     width: 100%;
     display: flex;
     justify-content: center;
+
     a {
         color: var(--text-color);
     }
