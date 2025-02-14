@@ -1,5 +1,5 @@
 import profile from '../assets/perfil.png';
-import curriculo from '../assets/Curriculo_Tiago_Alves.pdf';
+import curriculo from '../assets/Curriculo-Tiago_Alves.pdf';
 import logo_dc from '../assets/dc.png';
 import logo_vwp from '../assets/vwp.jpeg';
 import marvel from '../assets/projects/marvel.png';
