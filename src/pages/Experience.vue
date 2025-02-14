@@ -94,6 +94,11 @@ div.company {
             width: 60px;
         }
     }
+    @media (max-width: 410px) {
+        .logo{
+            display: none;
+        }
+    }
 }
 .dark{
     h5.info-time {

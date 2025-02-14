@@ -27,11 +27,18 @@ const router = useRouter();
 .container-menu {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 10px;
+
 
     ul {
         display: flex;
+        flex-wrap: wrap;
         list-style-type: none;
+
+        @media (max-width: 610px) {
+            justify-content: center;
+        }
 
         li {
             margin: 0 3px;

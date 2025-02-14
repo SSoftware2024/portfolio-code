@@ -102,6 +102,8 @@ function openLink(link) {
 }
 </script>
 <style scoped lang="scss">
+
+
 div.row-project {
     display: flex;
     flex-direction: row;

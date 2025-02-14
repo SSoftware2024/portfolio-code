@@ -16,8 +16,8 @@
             <!-- END PROFILE -->
             <!-- MENU -->
             <div style="margin-top: 10px;">
-                <Menu v-if="menuViewDesktop"></Menu>
-                <MenuMobile v-else></MenuMobile>
+                <Menu></Menu>
+                <!-- <MenuMobile v-else></MenuMobile> -->
             </div>
 
             <!-- END MENU -->
@@ -105,7 +105,7 @@ onMounted(() => {
     })
 
     function loadTheme() {
-        localStorage.clear();
+        // localStorage.clear();
         let theme = localStorage.getItem('theme');
         if (theme) {
             switch (theme) {
@@ -143,7 +143,8 @@ onMounted(() => {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    min-height: 100dvh;
+    padding-top: 10px;
     $social-network: (
         telegram: #0176bb,
         whatsapp: #0fcc08,
