@@ -2,7 +2,7 @@
     <div>
         <Card title="EXPERIÊNCIAS" class="card-content">
             <div style="margin-bottom: 10px;">
-                <h4>Nível: <span class="primary-color">Pleno</span></h4>
+                <!-- <h4>Nível: <span class="primary-color">Pleno</span></h4> -->
                 <h4>Experiência: <span class="primary-color">{{ dateCount.years }} anos <span v-if="dateCount.months > 0"> e {{ dateCount.months }} meses/mês </span> </span> </h4>
                 <h4>Graduado: <span class="primary-color">Sistemas de Informação</span> </h4>
             </div>
