@@ -86,7 +86,7 @@
                         <h4>BACK-END</h4>
                         <ul>
                             <li>PHP / LARAVEL</li>
-                            <li>C#(sharp)</li>
+                            <li>C#(sharp) .NET</li>
                         </ul>
                     </div>
                     <div>

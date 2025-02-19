@@ -4,7 +4,7 @@
             <div style="margin-bottom: 10px;">
                 <!-- <h4>Nível: <span class="primary-color">Pleno</span></h4> -->
                 <h4>Experiência: <span class="primary-color">{{ dateCount.years }} anos <span v-if="dateCount.months > 0"> e {{ dateCount.months }} meses/mês </span> </span> </h4>
-                <h4>Graduado: <span class="primary-color">Sistemas de Informação</span> </h4>
+                <h4>Graduado: <span class="primary-color">Sistemas de Informação - <i>(2017 - 2021)</i> </span> </h4>
             </div>
             <div class="company" style="margin-bottom: 15px;">
                 <div class="logo">
@@ -18,8 +18,8 @@
                         <li>Criação de CronJobs e eventos em tempo real com uso de filas</li>
                         <li>Configurações em hospedagem compartilhada e VPS</li>
                         <li>Atualização de sistemas legados</li>
-                        <li>Criação de sistema desde a modelagem, telas, versionamento a lançamento de versão estável
-                        </li>
+                        <li>Criação de sistema desde a modelagem, telas, versionamento a lançamento de versão estável</li>
+                        <li>Aplicações <span style="font-weight: bold;" class="primary-color">mobile</span> como extensão do sitema principal</li>
                         <li>
                             <i style="font-weight: 600;">Em progresso...</i>
                         </li>
@@ -38,6 +38,7 @@
                     <ul>
                         <li>Criação de layouts com responsividade.</li>
                         <li>Operações de CRUD</li>
+                        <li>Aplicação <span style="font-weight: bold;" class="primary-color">desktop</span> específica - PDV</li>
                         <li>Trabalhar com git em equipe, <span style="font-weight: 600;">gitflow</span></li>
                     </ul>
                 </div>
