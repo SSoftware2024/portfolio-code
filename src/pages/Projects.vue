@@ -2,36 +2,7 @@
     <div>
         <Card title="PROJETOS" class="card-content">
             <div class="row-project">
-                <div class="container-project">
-                    <div class="logo">
-                        <img :src="projects.marvel" alt="">
-                    </div>
-                    <h3 style="text-align: center;">MARVEL</h3>
-                    <div class="description">
-                        <p>
-                            Aplicação de cosumo de api sobre os heróis da marvel
-                        </p>
-                    </div>
-                    <div class="technologies">
-                        <div>
-                            <ul>
-                                <li>VITE</li>
-                                <li>VUE</li>
-                                <li>QUASAR</li>
-                                <li>SASS</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="links">
-                        <Button class="black" @click="openLink('https://github.com/SSoftware2024/marvel-api')">
-                            GITHUB
-                        </Button>
-                        <Button class="green" @click="openLink('https://ssoftware2024.github.io/marvel/#/')">
-                            ONLINE
-                        </Button>
 
-                    </div>
-                </div>
                 <div class="container-project">
                     <div class="logo">
                         <img :src="projects.todoList" alt="">
