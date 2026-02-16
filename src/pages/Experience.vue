@@ -71,7 +71,7 @@ const dateDiff = (date1, date2 = new Date()) => {
 };
 
 //uso
-const dateStart = new Date('2019-03-01');
+const dateStart = new Date('2021-03-01');
 const dateCount = dateDiff(dateStart);
 </script>
 <style scoped lang="scss">
