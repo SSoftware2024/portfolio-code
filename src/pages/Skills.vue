@@ -142,15 +142,11 @@
 <script setup>
 import {ref} from 'vue';
 //COMPONENTS
-import Card from '../components/Card.vue';
-import Button from '../components/Button.vue';
-import Modal from '../components/Modal.vue';
+import Card from '@/components/Card.vue';
+import Button from '@/components/Button.vue';
+import Modal from '@/components/Modal.vue';
 
 const showModal = ref(false);
-
-function readMore() {
-    
-}
 
 </script>
 <style scoped lang="scss">

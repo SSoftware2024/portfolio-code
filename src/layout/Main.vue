@@ -17,7 +17,6 @@
             <!-- MENU -->
             <div style="margin-top: 10px;">
                 <Menu></Menu>
-                <!-- <MenuMobile v-else></MenuMobile> -->
             </div>
 
             <!-- END MENU -->
@@ -72,11 +71,10 @@
 <script setup>
 import { Tooltip } from '@programic/vue3-tooltip';
 import { ref, onMounted } from 'vue';
-import * as files from '../js/files.js';
+import * as files from '@/js/files.js';
 import { PhTelegramLogo, PhWhatsappLogo, PhLinkedinLogo, PhFilePdf, PhGithubLogo, PhSun, PhMoon, PhEnvelopeSimple } from "@phosphor-icons/vue";
 //COMPONENTS
-import Menu from '../components/Menu.vue';
-import MenuMobile from '../components/MenuMobile.vue';
+import Menu from '@/components/Menu.vue';
 //PACKPAGE JS
 import Typewriter from 'typewriter-effect/dist/core';
 

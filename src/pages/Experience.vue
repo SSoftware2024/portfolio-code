@@ -48,8 +48,8 @@
 </template>
 <script setup>
 //COMPONENTS
-import Card from '../components/Card.vue';
-import { logo_dc, logo_vwp } from '../js/files.js';
+import Card from '@/components/Card.vue';
+import { logo_dc, logo_vwp } from '@/js/files.js';
 
 const dateDiff = (date1, date2 = new Date()) => {
     let years = date2.getFullYear() - date1.getFullYear();

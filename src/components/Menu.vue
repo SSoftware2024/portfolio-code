@@ -16,7 +16,7 @@
 </template>
 <script setup>
 //COMPONENTS
-import Card from '../components/Card.vue';
+import Card from '@/components/Card.vue';
 //js
 import { useRoute, useRouter } from 'vue-router';
 const route = useRoute();

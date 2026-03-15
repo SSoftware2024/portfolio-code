@@ -1,4 +1,4 @@
-import profile from '../assets/perfil.png';
+import profile from '../assets/perfil_02.png';
 import curriculo from '../assets/Curriculo_Tiago_Alves.pdf';
 //EXPERIÊNCIAS
 import logo_dc from '../assets/dc.png';

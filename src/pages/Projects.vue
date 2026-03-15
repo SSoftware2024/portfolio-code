@@ -42,13 +42,10 @@
 </template>
 <script setup>
 //COMPONENTS
-import Card from "../components/Card.vue";
-import Button from "../components/Button.vue";
-import CardProject from "../components/CardProject.vue";
-import { projects } from "../js/files.js";
-function openLink(link) {
-  window.open(link);
-}
+import Card from "@/components/Card.vue";
+import Button from "@/components/Button.vue";
+import CardProject from "@/components/CardProject.vue";
+import { projects } from "@/js/files.js";
 </script>
 <style scoped lang="scss">
 div.row-project {
