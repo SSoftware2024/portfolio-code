@@ -3,7 +3,7 @@
         <Card title="EXPERIÊNCIAS" class="card-content">
             <div style="margin-bottom: 10px;">
                 <!-- <h4>Nível: <span class="primary-color">Pleno</span></h4> -->
-                <h4>Experiência: <span class="primary-color">{{ dateCount.years }} anos <span v-if="dateCount.months > 0"> e {{ dateCount.months }} meses/mês </span> </span> </h4>
+                <!-- <h4>Experiência: <span class="primary-color">{{ dateCount.years }} anos <span v-if="dateCount.months > 0"> e {{ dateCount.months }} meses/mês </span> </span> </h4> -->
                 <h4>Graduado: <span class="primary-color">Sistemas de Informação</span> </h4>
             </div>
             <div class="company" style="margin-bottom: 15px;">
@@ -11,7 +11,7 @@
                     <img :src="logo_vwp" alt="">
                 </div>
                 <h2>VWP AGÊNCIA DIGITAL, SP</h2>
-                <h5 class="info-time">SET de 2021 - ATUALMENTE</h5>
+                <h5 class="info-time">SET de 2021 - JAN de 2026</h5>
                 <div class="content">
                     <ul>
                         <li>Criação e consumo de APIs</li>

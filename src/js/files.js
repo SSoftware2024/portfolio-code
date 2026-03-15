@@ -1,15 +1,17 @@
 import profile from '../assets/perfil.png';
-import curriculo from '../assets/Curriculo-Tiago_Alves.pdf';
+import curriculo from '../assets/Curriculo_Tiago_Alves.pdf';
+//EXPERIÊNCIAS
 import logo_dc from '../assets/dc.png';
 import logo_vwp from '../assets/vwp.jpeg';
-import marvel from '../assets/projects/marvel.png';
+//PROJETOS
 import todoList from '../assets/projects/todoList.png';
 import portfolio from '../assets/projects/profile.svg';
+import uninta from '../assets/projects/uninta.png';
 
 const projects = {
     todoList,
-    marvel,
-    portfolio
+    portfolio,
+    uninta
 }
 export {
     profile,

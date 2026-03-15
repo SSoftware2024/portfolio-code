@@ -46,7 +46,7 @@
                     </a>
                 </Tooltip>
                 <Tooltip title="ENVIAR EMAIL">
-                    <a href="mailto:tiagooliveiraasodev@gmail.com?subject=Iteresse%20em%20seu%20trabalho&body=Olá, me chamo..."
+                    <a href="mailto:tiagooliveiraaso2@gmail.com?subject=Iteresse%20em%20seu%20trabalho&body=Olá, me chamo..."
                         target="_blank" class="icon-email">
                         <PhEnvelopeSimple :size="32" />
                     </a>
@@ -105,7 +105,6 @@ onMounted(() => {
     })
 
     function loadTheme() {
-        // localStorage.clear();
         let theme = localStorage.getItem('theme');
         if (theme) {
             switch (theme) {

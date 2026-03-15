@@ -7,6 +7,7 @@
                     <ul>
                         <li>TESTES UNITÁRIOS</li>
                         <li>API RESTFULL</li>
+                        <li>MCP</li>
                     </ul>
                 </div>
                 <div>
@@ -14,12 +15,13 @@
                     <ul>
                         <li>INERTIA</li>
                         <li>LIVEWIRE</li>
-                        <li>BREEZE</li>
-                        <li>JETSTREAM</li>
+                        <li>NATIVE PHP</li>
+                        <li>BREEZE <i style="text-decoration: underline;">Legado</i></li>
+                        <li>JETSTREAM <i style="text-decoration: underline;">Legado</i></li>
                         <li>FORTIFY</li>
                         <li>SANCTUM</li>
                         <li>PASSPORT</li>
-                        <li>WEBSOCKETS</li>
+                        <li>WEBSOCKETS - REALTIME</li>
                         <li>QUEQUE</li>
                         <li>HORIZON</li>
                         <li>LARAVEL UI - <i style="text-decoration: underline;">Legado</i> </li>
@@ -68,13 +70,6 @@
                         <li>MONGO DB</li>
                     </ul>
                 </div>
-                <div>
-                    <h4>OUTROS</h4>
-                    <ul>
-                        <li>BITBUCKET</li>
-                        <li>CI / CD - <i style="text-decoration: underline;">Aprofundando</i></li>
-                    </ul>
-                </div>
             </div>
         </div>
     </Modal>
@@ -86,7 +81,9 @@
                         <h4>BACK-END</h4>
                         <ul>
                             <li>PHP / LARAVEL</li>
-                            <li>C#(sharp)</li>
+                            <li>NODE</li>
+                            <li>PYTHON</li>
+                            <li>C-Sharp(C#)</li>
                         </ul>
                     </div>
                     <div>
@@ -111,23 +108,24 @@
                         <h4>MÓVEL</h4>
                         <ul>
                             <li>REACT NATIVE </li>
-                            <li>FLUTTER - <i style="text-decoration: underline;">Aprofundando</i></li>
-                            <li>MOBX - <i>Pacote</i></li>
+                            <li>FLUTTER</li>
+                            <li>NATIVE PHP (MOBILE)</li>
                         </ul>
                     </div>
                     <div>
                         <h4>DEVOPS</h4>
                         <ul>
-                            <li>DOCKER - <i style="text-decoration: underline;">Aprofundando</i></li>
+                            <li>DOCKER</li>
+                            <li>CI / CD</li>
                             <li>HOSPEDAGEM</li>
                             <li>VPS</li>
+                            <li>GITHUB ACTIONS</li>
                         </ul>
                     </div>
                     <div>
                         <h4>OUTROS</h4>
                         <ul>
                             <li>GITFLOW</li>
-                            <li>GITHUB ACTIONS</li>
                             <li>JSON / XML</li>
                         </ul>
                     </div>
