@@ -24,12 +24,12 @@
             <!-- SOCIAL NETWORK  -->
             <div class="social-network">
                 <Tooltip title="TELEGRAM">
-                    <a href="https://t.me/TiagoDevelop" target="_blank" class="icon-telegram">
+                    <a href="https://t.me/thg_oliveira" target="_blank" class="icon-telegram">
                         <PhTelegramLogo :size="32" />
                     </a>
                 </Tooltip>
                 <Tooltip title="WHATSAPP">
-                    <a href="https://wa.link/1yl95p" target="_blank" class="icon-whatsapp">
+                    <a href="https://wa.me/558899413561?text=Ol%C3%A1%2C%20me%20chamo" target="_blank" class="icon-whatsapp">
                         <PhWhatsappLogo :size="32" />
                     </a>
                 </Tooltip>
